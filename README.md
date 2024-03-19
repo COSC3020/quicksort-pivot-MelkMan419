@@ -27,6 +27,5 @@ With probability 1/2, the first element will be from the middle n/2 elements.
 Therefore, the probability of choosing a good pivot by selecting the first element is 1/2.
 
 Using the median-of-three method:
-We select the median value among the first, middle, and last elements as the pivot. To have a good pivot using the median-of-three method, at least two out of the three elements need to fall within the middle n/2 elements. The probability that the first element is from the middle n/2 elements is 1/2. If the first element is from the middle n/2 elements, the probability that the last element is also from the middle n/2 elements is 1/2. If the first element is from the middle n/2 elements and the last element is also from the middlen/2 elements, then the middle element must also be from the middle n/2 elements for the pivot to be good. So the proabability is actually (1/2)(1/2)=1/4
-
-So comparing the probabilities, we can see that the median-of-three method has a lower probability of selecting a good pivot (1/4) compared to choosing the first element with a probability of (1/2). 
+From slide 34 we can see the probabilites of chosing a good element using this method and it gives us P as the middle element (PPP + LPG + PPL + PPG = 8/64 + 12/64 + 12/64 + 12/64) we would have 44/64, a 68.75% chance of choosing a good pivot using the median-of-three strategy
+So comparing the probabilities, we can see that the median-of-three method has a higher probability of selecting a good pivot (68.75%) compared to choosing the first element with a probability of (50%). 
