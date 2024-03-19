@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/IF3rQO50)
 # Quicksort Pivots
 
 in the lectures I only briefly mentioned strategies for determining a good pivot
@@ -19,3 +20,12 @@ quantitatively reason with them.
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
+
+Choosing the first element as the pivot:
+If we choose the first element as the pivot, it will be a good pivot only if it falls within the middle n/2 elements when the array is sorted.
+With probability 1/2, the first element will be from the middle n/2 elements.
+Therefore, the probability of choosing a good pivot by selecting the first element is 1/2.
+
+Using the median-of-three method:
+From slide 34 we can see the probabilites of chosing a good element using this method and it gives us P as the middle element (PPP + LPG + PPL + PPG = 8/64 + 12/64 + 12/64 + 12/64) we would have 44/64, a 68.75% chance of choosing a good pivot using the median-of-three strategy
+So comparing the probabilities, we can see that the median-of-three method has a higher probability of selecting a good pivot (68.75%) compared to choosing the first element with a probability of (50%). 
